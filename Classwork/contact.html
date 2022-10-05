@@ -10,30 +10,41 @@
 </head>
 
 <body>
-    <form action="mailto:jalakbarli13256@ada.edu.az" method="post" enctype="text/plain">
-        <table>
-            <tr>
-                <td><label for="name">Full Name: </label></td>
-                <td><input type="text" name="name" id="name"></td>
-            </tr>
-            <tr>
-                <td><label for="email">Email: </label></td>
-                <td><input type="email" name="email" id="email"></td>
-            </tr>
-            <tr>
-                <td><label for="text">Text: </label></td>
-                <td><textarea name="text" id="text" cols="30" rows="10">Hello World</textarea></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Submit"></td>
-            </tr>
-        </table>
-    </form>
-</body>
+    <div class="navbar">
+        <ul>
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+                <a href="education.html">Education</a>
+            </li>
+            <li class="disabled">
+                <a href="#" aria-disabled="true">More</a>
+            </li>
+        </ul>
+    </div>
 
-<footer>
-    <hr>
-    <a href="index.html">Home</a>
-</footer>
+    <div class="contact">
+        <form action="mailto:jalakbarli13256@ada.edu.az" method="post" enctype="text/plain">
+            <table>
+                <tr>
+                    <td><label for="name">Full Name: </label></td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email: </label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="text">Text: </label></td>
+                    <td><textarea name="text" id="text" cols="30" rows="10">Hello World</textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
 
 </html>

@@ -3,39 +3,45 @@
 }
 
 body {
-    background-color: white;
-    width: 90%;
+    background-color: rgb(127, 113, 170);
+    width: 100%;
     margin: auto;
 }
 
 h1,
-h2 {
-    color: black;
+p,
+label {
+    color: #e8c069;
 }
 
-.italic-table {
+h2 {
+    color: #3d3f5a;
+}
+
+.skills {
     font-style: italic;
+    margin-bottom: 20px;
+}
+
+.disabled>a {
+    color: #997f46;
 }
 
 a:link {
     text-decoration: none;
 }
 
-a:hover {
-    background-color: bisque;
+.active>a {
+    color: #e8c069;
 }
 
-a:visited {
-    background-color: blueviolet;
+.active>a:hover {
+    background-color: rgb(127, 104, 198);
 }
 
 hr {
-    border-top: 3px dashed red;
-    width: 70%;
-}
-
-section {
-    text-align: center;
+    border-top: 3px dashed rgb(127, 104, 198);
+    width: 50%;
 }
 
 table {
@@ -43,25 +49,35 @@ table {
     margin-right: auto;
 }
 
-table.changed,
-td.changed {
+.skills-list,
+.skill,
+.rate,
+.education-list,
+.university,
+.uni-name {
     border: 1px solid;
-    border-collapse: collapse;
+    color: #e8c069;
+    border-color: black;
+
 }
 
-footer {
-    text-align: center;
+.rate {
+    text-align: left;
 }
 
 img {
     border-radius: 50%;
     height: 200px;
     width: 200px;
+    transition: 0.4s;
+    border: 1px solid #e8c069;
 }
 
 img:hover {
-    height: 220px;
-    width: 220px;
+    box-shadow: 10px 5px 5px rgba(199, 197, 197, 0.423);
+    transform: translateX(-10px);
+    transition: 0.4s;
+    transition-timing-function: ease-out;
 }
 
 input[type=text],
@@ -82,7 +98,7 @@ textarea {
 
 input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #e8c069;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -92,5 +108,53 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #e8c069aa;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.heading>h1 {
+    margin: 10px;
+}
+
+.image {
+    display: inline;
+}
+
+.intro,
+.education,
+.contact {
+    margin-top: 65px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: rgb(97, 86, 131);
+}
+
+.navbar>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-me,
+.skills {
+    text-align: center;
 }

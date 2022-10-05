@@ -92,7 +92,6 @@ div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: auto;
     background-color: #16171b;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
