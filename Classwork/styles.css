@@ -65,12 +65,19 @@ table {
     text-align: left;
 }
 
-img {
+.image>img {
     border-radius: 50%;
     height: 200px;
     width: 200px;
     transition: 0.4s;
     border: 1px solid #e8c069;
+}
+
+.gallery-collection {
+    border-radius: 10%;
+    height: 200px;
+    width: 250px;
+    transition: 0.4s;
 }
 
 img:hover {
@@ -134,7 +141,8 @@ input[type=submit]:hover {
 
 .intro,
 .education,
-.contact {
+.contact,
+.my-gallery {
     margin-top: 65px;
 }
 
@@ -156,5 +164,19 @@ input[type=submit]:hover {
 
 .about-me,
 .skills {
+    text-align: center;
+}
+
+.my-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery-r-1,
+.gallery-r-2,
+.gallery-r-3 {
+    display: block;
     text-align: center;
 }
