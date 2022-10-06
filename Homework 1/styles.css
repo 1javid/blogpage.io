@@ -127,10 +127,6 @@ a {
     text-decoration: none;
 }
 
-.disabled>a {
-    color: #8f8f93;
-}
-
 .active>a {
     color: white;
 }
