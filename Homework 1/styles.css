@@ -133,6 +133,11 @@ a {
     text-decoration: none;
 }
 
+.email>a {
+    color: black;
+}
+
+.linkedin>a,
 .active>a {
     color: white;
 }
