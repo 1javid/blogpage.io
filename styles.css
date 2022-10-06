@@ -176,3 +176,23 @@ input[type=submit]:hover {
     display: block;
     text-align: center;
 }
+
+@media only screen and (max-width: 650px) {
+    .navbar>ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro,
+    .education,
+    .contact,
+    .my-gallery {
+        margin-top: 190px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .my-gallery {
+        flex-direction: column;
+    }
+}
