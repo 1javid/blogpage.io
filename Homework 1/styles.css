@@ -7,20 +7,20 @@ div {
     display: block;
 }
 
-.myPfp {
-    width: 90%;
-    height: 215px;
-    margin: 16px auto 10px;
-    box-sizing: border-box;
-    border-radius: 3%;
-    border: 1px solid rgba(255, 255, 255, 0.501);
-    transition: 0.4s;
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: #ea1d6f;
 }
 
-.myPfp:hover {
-    transform: translateY(-5px);
-    transition: 0.4s;
-    transition-timing-function: ease-out;
+.navbar>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .container {
@@ -43,6 +43,22 @@ div {
     text-align: center;
 }
 
+.myPfp {
+    width: 90%;
+    height: 215px;
+    margin: 16px auto 10px;
+    box-sizing: border-box;
+    border-radius: 3%;
+    border: 1px solid rgba(255, 255, 255, 0.501);
+    transition: 0.4s;
+}
+
+.myPfp:hover {
+    transform: translateY(-5px);
+    transition: 0.4s;
+    transition-timing-function: ease-out;
+}
+
 .main {
     color: white;
     padding-bottom: 25px;
@@ -55,20 +71,6 @@ div {
 .bio>h3 {
     color: rgb(165, 118, 42);
     font-size: 13px;
-}
-
-.info {
-    margin-left: 40px;
-    margin-right: 20px;
-}
-
-.info>h2 {
-    font-size: 18px;
-}
-
-.info>p {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.71);
 }
 
 .contact {
@@ -101,6 +103,37 @@ div {
     border: 1px solid white;
 }
 
+a {
+    text-decoration: none;
+}
+
+.email>a {
+    color: black;
+}
+
+.linkedin>a,
+.active>a {
+    color: white;
+}
+
+.active>a:hover {
+    background-color: rgb(52, 52, 54);
+}
+
+.info {
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.info>h2 {
+    font-size: 18px;
+}
+
+.info>p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.71);
+}
+
 .bottom {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -125,40 +158,6 @@ div {
 
 .bottom>i:hover {
     background-color: rgba(255, 255, 255, 0.775);
-}
-
-a {
-    text-decoration: none;
-}
-
-.email>a {
-    color: black;
-}
-
-.linkedin>a,
-.active>a {
-    color: white;
-}
-
-.active>a:hover {
-    background-color: rgb(130, 125, 125);
-}
-
-
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border-bottom: 1px solid black;
-    background-color: #ea1d6f;
-}
-
-.navbar>ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    padding-left: 0;
 }
 
 @media only screen and (min-width:150px) and (max-width: 230px) {
