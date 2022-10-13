@@ -1,7 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: rgb(33, 33, 35);
-    background: linear-gradient(0deg, rgba(33, 33, 35, 1) 0%, rgba(91, 93, 95, 1) 100%);
+    background: black;
 }
 
 div {
@@ -149,10 +148,9 @@ a {
 .navbar {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     border-bottom: 1px solid black;
-    background-color: rgb(99, 98, 101);
+    background-color: #ea1d6f;
 }
 
 .navbar>ul {

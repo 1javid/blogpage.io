@@ -1,10 +1,9 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    background: rgb(33, 33, 35);
-    background: linear-gradient(0deg, rgba(33, 33, 35, 1) 0%, rgba(91, 93, 95, 1) 100%);
+    background: black;
     width: 100%;
     margin: auto;
 }
@@ -12,16 +11,11 @@ body {
 h1,
 p,
 label {
-    color: rgba(255, 255, 255, 0.574);
+    color: #ddd;
 }
 
 h2 {
-    color: #131314;
-}
-
-.skills {
-    font-style: italic;
-    margin-bottom: 20px;
+    color: #ddd;
 }
 
 a:link {
@@ -46,42 +40,31 @@ table {
     margin-right: auto;
 }
 
-.skills-list,
-.skill,
-.rate,
-.education-list,
-.university,
-.uni-name {
-    border: 1px solid;
-    color: rgba(255, 255, 255, 0.574);
-    border-color: black;
-
-}
-
-.rate {
-    text-align: left;
-}
-
-.image>img {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    transition: 0.4s;
-    border: 1px solid rgba(255, 255, 255, 0.574);
-}
-
 .gallery-collection {
     border-radius: 10%;
     height: 200px;
     width: 250px;
-    transition: 0.4s;
 }
 
-img:hover {
-    box-shadow: 10px 5px 5px rgba(199, 197, 197, 0.423);
-    transform: translateX(-10px);
-    transition: 0.4s;
-    transition-timing-function: ease-out;
+.contact {
+    background-color: rgb(35, 34, 34);
+    padding: 30px;
+    width: 25%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5%;
+
+    box-shadow:
+        0px 0.6px 2.2px rgba(255, 255, 255, 0.02),
+        0px 1.5px 5.3px rgba(255, 255, 255, 0.028),
+        0px 2.9px 10px rgba(255, 255, 255, 0.035),
+        0px 5.1px 17.9px rgba(255, 255, 255, 0.042),
+        0px 9.6px 33.4px rgba(255, 255, 255, 0.05),
+        0px 23px 80px rgba(255, 255, 255, 0.07);
+}
+
+label {
+    color: #ddd;
 }
 
 input[type=text],
@@ -91,9 +74,14 @@ textarea {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #ea1d6f;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: transparent;
+    color: white;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 1.4px;
 }
 
 textarea {
@@ -102,43 +90,19 @@ textarea {
 
 input[type=submit] {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.574);
+    background-color: #ea1d6f;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
 }
 
 input[type=submit]:hover {
     background-color: rgba(29, 26, 26, 0.574);
 }
 
-.intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.heading {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-}
-
-.heading>h1 {
-    margin: 10px;
-}
-
-.image {
-    display: inline;
-}
-
-.intro,
 .education,
-.contact,
 .my-gallery {
     margin-top: 65px;
 }
@@ -148,7 +112,7 @@ input[type=submit]:hover {
     top: 0;
     width: 100%;
     border-bottom: 1px solid black;
-    background-color: rgb(99, 98, 101);
+    background-color: #ea1d6f;
 }
 
 .navbar>ul {
@@ -157,11 +121,6 @@ input[type=submit]:hover {
     justify-content: space-around;
     list-style-type: none;
     padding-left: 0;
-}
-
-.about-me,
-.skills {
-    text-align: center;
 }
 
 .my-gallery {
@@ -178,13 +137,18 @@ input[type=submit]:hover {
     text-align: center;
 }
 
+.gallery-r-1>img,
+.gallery-r-2>img,
+.gallery-r-3>img {
+    border: 1px solid #ea1d6f;
+}
+
 @media only screen and (max-width: 650px) {
     .navbar>ul {
         flex-direction: column;
         align-items: center;
     }
 
-    .intro,
     .education,
     .contact,
     .my-gallery {
@@ -200,13 +164,96 @@ input[type=submit]:hover {
 
 .education {
     width: 100%;
-    margin-bottom: 565px;
+    color: #ddd;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.contact {
-    margin-bottom: 252px;
+.education>ul>li {
+    margin-top: 8px;
 }
+
+.edu-details {
+    border: 1px solid #ea1d6f;
+    border-radius: 5%;
+    padding: 30px;
+}
+
+.edu-details>h2 {
+    color: #ddd;
+}
+
+.edu-details>ul>li>span {
+    color: #ea1d6f;
+}
+
+
 
 .my-gallery {
     margin-bottom: 38px;
+}
+
+.about-me-container {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-card {
+    color: #ddd;
+    background-color: rgb(34, 32, 32);
+    border: 1px solid #ea1d6f;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me-card>hr {
+    margin: 0;
+}
+
+.about-me-head>h1 {
+    text-align: center;
+}
+
+.about-me-head>img {
+    padding-top: 21px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.about-me-main {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.about-me-main>p {
+    width: 70%;
+}
+
+.about-me-skills {
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills>h4 {
+    border: 1px solid #ea1d6f;
+    border-radius: 5%;
+    padding: 15px;
+    margin-left: 5px;
 }
