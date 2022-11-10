@@ -70,6 +70,14 @@ hr {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    box-shadow:
+        0px 0.6px 2.2px rgba(255, 255, 255, 0.02),
+        0px 1.5px 5.3px rgba(255, 255, 255, 0.028),
+        0px 2.9px 10px rgba(255, 255, 255, 0.035),
+        0px 5.1px 17.9px rgba(255, 255, 255, 0.042),
+        0px 9.6px 33.4px rgba(255, 255, 255, 0.05),
+        0px 23px 80px rgba(255, 255, 255, 0.07);
 }
 
 .about-me-card>hr {
@@ -81,12 +89,13 @@ hr {
 }
 
 .about-me-head>img {
-    padding-top: 21px;
+    margin-top: 21px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     border-radius: 50%;
+    border: 1px solid #ea1d6f;
 }
 
 .about-me-main {
@@ -151,6 +160,7 @@ hr {
     margin: auto;
     margin-top: 100px;
     border-radius: 5%;
+    border: 1px solid #ea1d6f;
 
     box-shadow:
         0px 0.6px 2.2px rgba(255, 255, 255, 0.02),
