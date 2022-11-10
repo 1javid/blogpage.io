@@ -49,7 +49,7 @@ a:link {
 .container {
     width: 60%;
     margin: auto;
-    margin-top: 65px;
+    margin-top: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,6 +166,11 @@ a:link {
 }
 
 @media only screen and (max-width: 760px) {
+
+    .container {
+        margin-top: 205px;
+    }
+
     .navbar>ul {
         flex-direction: column;
         align-items: center;
