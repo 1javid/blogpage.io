@@ -131,6 +131,10 @@ a:link {
     margin: 20px 0 20px 0;
 }
 
+.button-groupings .all-crossout-buttons {
+    margin-left: 15px;
+}
+
 .all-buttons {
     background-color: #ea1d6f;
     border: 1px solid black;
