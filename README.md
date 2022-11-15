@@ -1,1 +1,1 @@
-https://1javid.github.io
+https://1javid.github.io/blogpage.io/
