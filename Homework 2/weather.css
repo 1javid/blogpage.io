@@ -78,6 +78,8 @@ h4 {
 #city,
 #lat,
 #lon {
+    color: rgb(67, 66, 66);
+    outline: none;
     border: none;
     border-bottom: 2px solid white;
     background-color: rgb(185, 235, 255);
@@ -86,7 +88,7 @@ h4 {
 #geo {
     color: rgb(67, 66, 66);
     background-color: white;
-    border: 1px solid rgb(143, 204, 230);
+    border: 1px solid rgb(155, 197, 215);
     border-radius: 25px;
 }
 
