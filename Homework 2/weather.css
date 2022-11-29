@@ -1,0 +1,189 @@
+body {
+    background: rgb(185, 235, 255);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'EB Garamond', serif;
+    color: rgba(0, 0, 0, 0.362);
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(211, 232, 255);
+    margin: auto;
+    padding: 0;
+    width: 70%;
+}
+
+p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+h4 {
+    font-size: 17px;
+    margin: auto;
+}
+
+.navbar {
+    display: inline;
+}
+
+.navbar>div {
+    margin: 25px 0 25px 0;
+    width: 30rem;
+    height: 4rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#city,
+#lat,
+#lon {
+    border: 1px solid rgb(99, 132, 146);
+    border-radius: 25px;
+}
+
+#geo {
+    border: 1px solid rgb(99, 132, 146);
+    background-color: white;
+    border-radius: 25px;
+}
+
+.weather-container {
+    margin: 25px 0 25px 0;
+    width: 33rem;
+    height: 40rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    background-image: url("/img/background.jpg");
+}
+
+.inner-main-containers {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#importantContainer {
+    margin: auto;
+    width: 20rem;
+    height: 12rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+#importantContainer div {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-detail-containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 0 60px 0;
+}
+
+#feelsLikeContainer,
+#humidityContainer,
+#pressureContainer,
+#windSpeedContainer {
+    width: 6.5rem;
+    height: 6.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.inner-footer-containers {
+    margin: auto;
+    width: 20rem;
+    height: 3rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.weather-container:before,
+#importantContainer:before,
+#feelsLikeContainer:before,
+#humidityContainer:before,
+#pressureContainer:before,
+#windSpeedContainer:before,
+.inner-footer-containers:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.344);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+@media only screen and (max-width: 445px) {
+    .weather-container {
+        height: 60rem;
+    }
+
+    .inner-detail-containers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #humidityContainer,
+    #pressureContainer,
+    #windSpeedContainer {
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 370px) {
+    .weather-container {
+        height: 65rem;
+    }
+
+    .inner-footer-containers {
+        flex-direction: column;
+        height: 8rem;
+        width: 18rem;
+    }
+}
